@@ -134,7 +134,7 @@ class ProxyProcess extends AbstractTcpProcess
                 'package_max_length'    => 1024*1024
             ]
         );
-        $client->connect($socketFile, null, 3);
+        $client->connect($socketFile, 0, 3);
         if(!$client->isConnected()){
             return null;
         }else{

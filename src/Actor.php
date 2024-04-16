@@ -132,7 +132,7 @@ class Actor
         }
     }
 
-    public function attachServer(\swoole_server $server)
+    public function attachServer(\Swoole\Server $server)
     {
         $list = $this->generateProcess();
         foreach ($list['proxy'] as  $proxy){
